@@ -13,17 +13,16 @@ public class PrimeServiceStub implements PrimeService{
     ArrayList<FoundPrime> Primes = new ArrayList<FoundPrime>();
     @Override
     public void addFoundPrime( FoundPrime foundPrime )    {
-        for (FoundPrime prime_ : Primes){
+        /*for (FoundPrime prime_ : Primes){
             if(prime_.getPrime() == foundPrime.getPrime()){
                 break;
             };
-        }
+        }*/
         Primes.add(foundPrime);
     }
 
     @Override
     public List<FoundPrime> getFoundPrimes() {
-        //TODO
         return Primes;
     }
 
